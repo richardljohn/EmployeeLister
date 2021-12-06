@@ -23,11 +23,24 @@ class App extends Component {
   }
 
   render(){
-    return ( 
-      <div className="App">
 
-      </div>
-    );
+    let {isLoaded, items} = this.state;
+
+    if(!isLoaded){
+      return(
+        <div>
+          Loading...
+        </div>
+      );
+    }
+
+    else { 
+      return (
+        <div className="App">
+          Data has been successfully loaded.
+        </div>
+      );
+    }
   }
 
 }
