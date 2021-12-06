@@ -37,7 +37,13 @@ class App extends Component {
     else { 
       return (
         <div className="App">
-          Data has been successfully loaded.
+          <ul className="employee-list">
+            {items.map(item => ( 
+              <li key={item.id} className = "employee-info">
+                <p>Name: {item.name} | Employee ID: {item.id} | Department: {item.department}</p> 
+              </li>
+            ))};
+          </ul>
         </div>
       );
     }
