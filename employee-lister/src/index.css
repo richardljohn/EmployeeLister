@@ -14,8 +14,16 @@ code {
 }
 
 button { 
-  background-color: lavender;
+  background-color: lavenderblush;
   padding: 10px 30px;
   width: 300px;
 }
 
+.card { 
+  margin: auto;
+  padding: 10px; 
+}
+
+.banner { 
+  padding: 10px;
+}

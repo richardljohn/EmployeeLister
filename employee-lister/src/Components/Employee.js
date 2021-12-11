@@ -25,17 +25,28 @@ function Employee({selectedEmployee}){
     } = selectedEmployeeData;
 
     return ( 
-        <div>
+        <div class="card bg-dark text-center">
             <div>
                 <p><img style={{maxHeight: '300px'}} src={photo} alt={name}></img></p>
-                <p>Name: {name}</p>
-                <p>Employee ID: {id}</p>
-                <p>Starting Date: {startDate}</p>
-                <p>Job Role: {role}</p>
-                <p>Department: {department}</p>
+                <div class="card-body bg-dark text-light">
+                    <h3>{name}</h3>
+                    <p>Employee ID: {id}</p>
+                    <p>Starting Date: {startDate}</p>
+                    <p>Job Role: {role}</p>
+                    <p>Department: {department}</p>
+                </div>
             </div>
         </div>
     );
 }
+
+// {/* <div class="card" style="width: 18rem;">
+//   <img class="card-img-top" src="..." alt="Card image cap">
+//   <div class="card-body">
+//     <h5 class="card-title">Card title</h5>
+//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//     <a href="#" class="btn btn-primary">Go somewhere</a>
+//   </div>
+// </div> */}
 
 export default Employee;
