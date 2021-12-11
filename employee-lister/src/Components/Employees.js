@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Employee from "./Employee"
 
@@ -11,8 +11,7 @@ function Employees() {
 
 
     function getEmployees() { 
-        axios.get('https://statenweb.mockable.io/employees')
-        .then(function(response){
+        axios.get('https://statenweb.mockable.io/employees').then(function(response){
             setEmployeeData(response.data);
         });
     }
@@ -22,12 +21,17 @@ function Employees() {
     }
 
     if(selectedEmployee){
-        return <p>You have selected {selectedEmployee}</p>
+        return (
+            <div>
+                <Employee selectedEmployee={selectedEmployee} />
+                <button class="btn-primary"onClick={() => setSelectedEmployee(null)}>Reset</button>
+            </div>
+        );
     }
 
     return <div>
-        <button onClick={getEmployees}>Click for Employees</button>
-        {employeeData.map((employee) => <p key={employee.id}><button>{employee.name} - {employee.departmnet}</button></p>)}
+        <p>Welcome to CSI. The Country Stinson Island. Here is our staff.</p>
+        {employeeData.map((employee) => <p key={employee.id}><button onClick={() => getEmployeeById(employee.id)}>{employee.name}</button></p>)}
     </div>;
 }
 
