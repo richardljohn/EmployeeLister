@@ -24,9 +24,9 @@ function Employee({selectedEmployee}){
 
     return ( 
         <div class="container">
-            <h2 class ="text-light m-2">Here is one of our valued employees:</h2>
-            <div class="card bg-dark text-center my-3" style={{width: "30rem"}}>
-                    <p><img style={{maxHeight: '300px', maxWidth: "200px"}} src={photo} alt={name}></img></p>
+            <h2 class ="text-light m-2">This is {name}, one of our valued employees:</h2>
+            <div class="card bg-dark text-center my-3" style={{width: "35rem"}}>
+                    <p><img class=""style={{maxHeight: '400px', maxWidth: "300px"}} src={photo} alt={name}></img></p>
                     <div class="card-body bg-dark text-light">
                         <h3>{name}</h3>
                         <p>Employee ID: {id}</p>

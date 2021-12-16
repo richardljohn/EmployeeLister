@@ -29,10 +29,13 @@ function Employees() {
         );
     }
 
-    return <div>
-        <p class ="banner text-dark animate__animated animate__fadeIn"><h2>Welcome to the King Kamehameha Country Club. Here are some of our wonderful Employees...</h2></p>
-        {employeeData.map((employee) => <p key={employee.id}><button class="employee-btn btn-primary w-50 animate__animated animate__fadeIn"onClick={() => getEmployeeById(employee.id)}>{employee.name}</button></p>)}
-    </div>;
+    return (
+        <div>
+            <p class ="banner text-light"><h2 class ="animate__animated animate__fadeIn">Welcome to the King Kamehameha Country Club.</h2></p>
+            <p class ="sub-banner text-light"><h3 class = "animate__animated animate__fadeIn">Here are some of our wonderful Employees...</h3></p>
+            {employeeData.map((employee) => <p key={employee.id}><button class="employee-btn btn-primary w-50 animate__animated animate__fadeIn"onClick={() => getEmployeeById(employee.id)}>{employee.name}</button></p>)}
+        </div>
+    );
 }
 
 export default Employees;
