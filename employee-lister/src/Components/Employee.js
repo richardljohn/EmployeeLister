@@ -24,15 +24,15 @@ function Employee({selectedEmployee}){
 
     return ( 
         <div class="container">
-            <h2 class ="text-light m-2">This is {name}, one of our valued employees:</h2>
+            <h3 class ="text-light m-2">This is {name}, an integral part of the {department} department at the King Kamehameha Country Club.</h3>
             <div class="card bg-dark text-center my-3" style={{width: "35rem"}}>
                     <p><img class=""style={{maxHeight: '400px', maxWidth: "300px"}} src={photo} alt={name}></img></p>
                     <div class="card-body bg-dark text-light">
                         <h3>{name}</h3>
-                        <p>Employee ID: {id}</p>
-                        <p>Starting Date: {startDate}</p>
-                        <p>Job Role: {role}</p>
-                        <p>Department: {department}</p>
+                        <p><strong>Employee ID: </strong>{id}</p>
+                        <p><strong>Starting Date: </strong>{startDate}</p>
+                        <p><strong>Job Role: </strong>{role}</p>
+                        <p><strong>Department: </strong>{department}</p>
                     </div>
             </div> 
         </div>

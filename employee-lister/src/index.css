@@ -13,19 +13,15 @@ code {
     monospace;
 }
 
-p { 
-  animation-iteration-count: 1;
-}
-
 h3 {
-  animation-delay: .4s;
+  animation-delay: .7s;
 }
 
 button { 
   background-color: lavenderblush;
   padding: 10px 30px;
   width: 300px;
-  animation-delay: 1.0s;
+  animation-delay: 1.4s;
   animation-iteration-count: 1;
 }
 
