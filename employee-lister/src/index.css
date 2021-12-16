@@ -22,7 +22,6 @@ button {
   padding: 10px 30px;
   width: 300px;
   animation-delay: 1.4s;
-  animation-iteration-count: 1;
 }
 
 .card { 
