@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import Employee from "./Employee"
+import Employee from "./Employee";
 
 function Employees() {
 
@@ -30,8 +30,8 @@ function Employees() {
     }
 
     return <div>
-        <p class ="banner text-dark"><h2>Welcome to the King Kamehameha Country Club. Here are some of our wonderful Employees...</h2></p>
-        {employeeData.map((employee) => <p key={employee.id}><button class="employee-btn btn-primary w-50"onClick={() => getEmployeeById(employee.id)}>{employee.name}</button></p>)}
+        <p class ="banner text-dark animate__animated animate__fadeIn"><h2>Welcome to the King Kamehameha Country Club. Here are some of our wonderful Employees...</h2></p>
+        {employeeData.map((employee) => <p key={employee.id}><button class="employee-btn btn-primary w-50 animate__animated animate__fadeIn"onClick={() => getEmployeeById(employee.id)}>{employee.name}</button></p>)}
     </div>;
 }
 

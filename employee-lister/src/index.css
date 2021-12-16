@@ -17,6 +17,7 @@ button {
   background-color: lavenderblush;
   padding: 10px 30px;
   width: 300px;
+  animation-delay: .9s;
 }
 
 .card { 
