@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 
 function Employee({selectedEmployee}){
 
+
     const [selectedEmployeeData, setSelectedEmployeeData] = useState(null);
 
     useEffect(() => {
         axios.get(`http://statenweb.mockable.io/employee/${selectedEmployee}`).then((r) => setSelectedEmployeeData(r.data));
         }, [selectedEmployee]);
 
+        
     if(!selectedEmployeeData){
         return <h1 class="loading-text text-light">Loading...</h1>;
     }

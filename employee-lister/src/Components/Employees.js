@@ -9,7 +9,6 @@ function Employees() {
 
     useEffect(getEmployees, []);
 
-
     function getEmployees() { 
         axios.get('https://statenweb.mockable.io/employees').then(function(response){
             setEmployeeData(response.data);
