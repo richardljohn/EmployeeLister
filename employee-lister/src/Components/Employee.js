@@ -26,7 +26,7 @@ function Employee({selectedEmployee}){
 
     return ( 
         <div class="container">
-            <h3 class ="text-light m-2">This is {name}, an integral part of the {department} department at the King Kamehameha Country Club.</h3>
+            <h3 class ="text-light m-2"><strong>This is {name}, an integral part of the {department} department at the King Kamehameha Country Club.</strong></h3>
             <div class="card bg-dark text-center my-3" style={{width: "35rem"}}>
                     <p><img class=""style={{maxHeight: '400px', maxWidth: "300px"}} src={photo} alt={name}></img></p>
                     <div class="card-body bg-dark text-light">
